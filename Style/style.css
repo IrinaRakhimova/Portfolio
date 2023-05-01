@@ -1,0 +1,146 @@
+body {
+    background-color: #EFE9E4;
+    color: #5E5343;
+    font-family: 'Inter', sans-serif;
+}
+
+#myPhoto {
+    width: 50%;
+    height: 100%;
+    margin-top: 100px;
+    left: 0;
+}
+
+.flexContainer {
+    display: flex;
+}
+
+.contact {
+    height: 60px;
+}
+
+#main {
+    margin-top: 100px; 
+    margin-left: 200px;
+    margin-right: 400px;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 30px 0;
+    font-family: 'Source Code Pro', monospace;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#firstH2 {
+    margin-top: 0;
+}
+
+h3 {
+    margin-bottom: 100px;
+}
+
+#hey {
+    font-size: 30px; 
+}
+
+button {
+    margin: 40px 0;
+    padding: 20px 60px; 
+}
+
+.contact {
+    margin-right: 20px;
+}
+
+.skill {
+    height: 80px;
+    margin: 30px 30px 30px 0;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+    margin-top: 100px; 
+    align-items: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+li {
+    font-size: 25px;
+    list-style-type: none;
+    
+}
+
+ul {
+ padding: 0;   
+}
+
+.heading {
+    text-align: center;
+}
+
+#education {
+    margin-top: 100px;
+}
+
+.center {
+    margin-left: 35%;
+    font-size: 25px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.margin {
+    margin-left: 100px;
+}
+
+.project {
+    height: 200px;
+    border: 1px solid #5E5343;
+}
+
+.justify {
+    justify-content: space-around;
+}
+
+#projects {
+    margin-top: 100px;
+}
+
+#sertificates {
+    margin-top: 100px;
+}
+
+.certificate {
+    height: 200px;
+}
+
+.gap {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.top {
+    margin-top: 120px;
+}
+
+.bottom {
+    margin-bottom: 100px;
+}
+
+.sides {
+    margin-right: 20%;
+    margin-left: 20%;
+}

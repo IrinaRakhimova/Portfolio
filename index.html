@@ -7,23 +7,31 @@
     <title>Irina Rakhimova</title>
     <link rel="stylesheet" href="./Style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
 
 <!--Main Info-->
-    <section id="mainInfo">
-        <img src="./Style/photo5451792930630120842.jpg" alt="" id="myPhoto">
+    <section id="mainInfo" class="flexContainer">
+        <img src="./Style/photo_2023-05-01_16-15-50.jpg" alt="" id="myPhoto">
+        
         <div id="main"> 
             <h1>Irina Rakhimova</h1>
-            <h2>Web-developer</h2>
-            <h3>she/her</h3>
+            <h2 id="firstH2">WEB DEVELOPER</h2>
+            <h3>SHE/HER</h3>
+            <div id="about"> 
+            <p id="hey">Hey! I'm a motivated junior front-end developer who is looking for an opportunity to get new experience in IT. </p>
+            </div>
             <div>
                 <button>Resume</button>
             </div>
-            <footer>
+            <footer class="flexContainer">
                 <img src="./Style/email.png" alt="e-mail" class="contact">
                 <img src="./Style/instagram (1).png" alt="instagram" class="contact">
                 <img src="./Style/linkedin.png" alt="linkedin" class="contact">
@@ -32,68 +40,61 @@
         </div>
     </section>
 
-<!--About-->    
-    <section>
-        <div id="about"> 
-            <h4>ABOUT ME</h4>
-            <p>Hey! I'm a motivated junior front-end developer who is looking for an opportunity to get new experience in IT. </p>
-        </div>
-    </section>    
-    
-<!--itSkills-->    
-    <section id="itSkills">    
-        <h4>MY SKILLS</h4>
-        <div>
-            <img src="./Style/html-5.png" alt="html" class="skill">
-            <img src="./Style/css-3.png" alt="css" class="skill">
-            <img src="./Style/js.png" alt="javascript" class="skill">
-            <img src="./Style/git.png" alt="git" class="skill">
-        </div>    
-    </section>    
-    
-<!--Languages-->
-    <section id="languages">
-        <h4>I SPEAK</h4>
-        <div>
-            <img src="./Style/united-kingdom.png" alt="english" class="skill">
-            <img src="./Style/finland (2).png" alt="finnish" class="skill">
-        </div>
+<!--Skills-->    
+    <section id="skills" class="flexContainer spaceBetween">
+        <section id="itSkills" class="">    
+            <h2 class="heading">I KNOW:</h2>
+            <div>
+                <img src="./Style/html-5.png" alt="html" class="skill">
+                <img src="./Style/css-3.png" alt="css" class="skill">
+                <img src="./Style/js.png" alt="javascript" class="skill">
+                <img src="./Style/git.png" alt="git" class="skill">
+            </div>    
+        </section>    
+        
+        <section id="languages" class="">
+            <h2 class="heading">I SPEAK:</h2>
+            <ul>
+                <li>Russian (native)</li>
+                <li>English (C1)</li>
+                <li>Finnish (A2)</li>
+            </ul>
+        </section>
     </section>
-
 <!--Education-->
     <section id="education">
-        <h4>EDUCATION</h4>
-        <div>
-            <div>   
+        <h2 class="heading">EDUCATION</h2>
+        <div class="center">
+            <div class="flexContainer">   
                 <div>
                     <p class="bold">2022 - </p>
                     <p class="bold">2023</p>
                 </div>
                 <div>
-                    <p class="bold">Front-end engeneer path</p>
-                    <p class="italic">Codeacademy</p>
+                    <p class="bold margin">Front-end engeneer path</p>
+                    <p class="italic margin">Codeacademy</p>
                 </div>
             </div>
 
-            <div>   
+            <div class="flexContainer">   
                 <div>
                     <p class="bold">2019 - </p>
                     <p class="bold">2021</p>
                 </div>
                 <div>
-                    <p class="bold">Master's degree, Language Interpretation and Translation</p>
-                    <p class="italic">Ural State University</p>
+                    <p class="bold margin">Master's degree, Language Interpretation and Translation</p>
+                    <p class="italic margin">Ural State University</p>
                 </div>
             </div>  
 
-            <div>   
+            <div class="flexContainer">   
                 <div>
                     <p class="bold">2015 - </p>
                     <p class="bold">2019</p>
                 </div>
                 <div>
-                    <p class="bold">Bachelor's degree, International Relations</p>
-                    <p class="italic">Ural State University</p>
+                    <p class="bold margin">Bachelor's degree, International Relations</p>
+                    <p class="italic margin">Ural State University</p>
                 </div>
             </div>
         </div>
@@ -101,8 +102,8 @@
         
 <!--Projects-->
     <section id="projects">
-        <h4>MY PROJECTS</h4>
-        <div> 
+        <h2 class="heading gap">MY PROJECTS</h2>
+        <div class="flexContainer justify"> 
             <img src="./Style/Progect 1.png" alt="project 1: this site" class="project">
             <img src="./Style/project 2.png" alt="project 2" class="project">
             <img src="./Style/Project 3.png" alt="project 3" class="project">
@@ -111,8 +112,8 @@
 
 <!--Sertificates-->
     <section id="sertificates">
-        <h4>MY SERTIFICATES</h4>
-        <div>
+        <h2 class="heading gap top">MY SERTIFICATES</h2>
+        <div class="flexContainer justify  sides bottom">
             <img src="./Style/HTML sertificate.png" alt="html Codeacademy" class="certificate">
             <img src="./Style/CSS sertificate.png" alt="css Codeacademy" class="certificate">
             <img src="./Style/JavaScript sertificate.png" alt="javascript Codeacademy" class="certificate">
