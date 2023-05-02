@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Irina Rakhimova</title>
     <link rel="stylesheet" href="./Style/style.css">
+    <script src="./javascript.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,500&display=swap" rel="stylesheet">
@@ -29,35 +30,47 @@
             <p id="hey">Hey! I'm a motivated junior front-end developer who is looking for an opportunity to get new experience in IT. </p>
             </div>
             <div>
-                <button>Resume</button>
+                <button onclick="openPdf()">Open my CV</button>
             </div>
             <footer class="flexContainer">
-                <img src="./Style/email.png" alt="e-mail" class="contact">
-                <img src="./Style/instagram (1).png" alt="instagram" class="contact">
-                <img src="./Style/linkedin.png" alt="linkedin" class="contact">
-                <img src="./Style/github-sign.png" alt="github" class="contact">
+                <a href="mailto:rakhimovairina1@yandex.ru" target="_blank"><img src="./Style/email.png" alt="e-mail" class="contact"></a>
+                <a href="https://www.instagram.com/irina_englishgirl/" target="_blank"><img src="./Style/instagram (1).png" alt="instagram" class="contact"></a>
+                <a href="https://www.linkedin.com/in/irina-rakhimova-15b083211/" target="_blank"><img src="./Style/linkedin.png" alt="linkedin" class="contact"></a>
+                <a href="https://github.com/IrinaRakhimova" target="_blank"><img src="./Style/github-sign.png" alt="github" class="contact"></a>
             </footer>
         </div>
     </section>
 
 <!--Skills-->    
-    <section id="skills" class="flexContainer spaceBetween">
+    <section id="skills" class="spaceBetween flexContainer">
         <section id="itSkills" class="">    
             <h2 class="heading">I KNOW:</h2>
-            <div>
-                <img src="./Style/html-5.png" alt="html" class="skill">
-                <img src="./Style/css-3.png" alt="css" class="skill">
-                <img src="./Style/js.png" alt="javascript" class="skill">
-                <img src="./Style/git.png" alt="git" class="skill">
-            </div>    
+            <div class="flexContainer">
+                <div>
+                    <img src="./Style/html-5.png" alt="html" class="skill">
+                    <p>HTML</p>
+                </div>
+                <div>   
+                    <img src="./Style/css-3.png" alt="css" class="skill">
+                    <p>CSS</p>
+                </div>  
+                <div>  
+                    <img src="./Style/js.png" alt="javascript" class="skill">
+                    <p>JavaScript</p>
+                </div>
+                <div>     
+                    <img src="./Style/git.png" alt="git" class="skill">
+                    <p>Git</p>
+                </div> 
+            </div>   
         </section>    
         
         <section id="languages" class="">
             <h2 class="heading">I SPEAK:</h2>
-            <ul>
-                <li>Russian (native)</li>
-                <li>English (C1)</li>
-                <li>Finnish (A2)</li>
+            <ul id="lang">
+                <li class="language">Russian (native)</li>
+                <li class="language">English (C1)</li>
+                <li class="language">Finnish (A2)</li>
             </ul>
         </section>
     </section>
@@ -103,10 +116,34 @@
 <!--Projects-->
     <section id="projects">
         <h2 class="heading gap">MY PROJECTS</h2>
-        <div class="flexContainer justify"> 
-            <img src="./Style/Progect 1.png" alt="project 1: this site" class="project">
-            <img src="./Style/project 2.png" alt="project 2" class="project">
-            <img src="./Style/Project 3.png" alt="project 3" class="project">
+        <div class="flexContainer justify">
+            <div>
+                <img src="./Style/Progect 1.png" alt="project 1: this site" class="project" onclick="openProject1()">
+                <h4>Technologies:</h4>
+                <p>HTML, CSS, JavaScript</p>
+                <h4>Description:</h4>
+                <p>Interactive portfolio page</p>
+                <h4>Link:</h4>
+                <a href="https://github.com/IrinaRakhimova/Portfolio" class="link" target="_blank">GitHub</a>
+            </div>
+            <div>    
+                <img src="./Style/project 2.png" alt="project 2" class="project" onclick="openProject2()">
+                <h4>Technologies:</h4>
+                <p>HTML, CSS</p>
+                <h4>Description:</h4>
+                <p>Responsive web page</p>
+                <h4>Link:</h4>
+                <a href="https://github.com/IrinaRakhimova/Finnish_club" class="link" target="_blank">GitHub</a>
+            </div>
+            <div>     
+                <img src="./Style/Project 3.png" alt="project 3" class="project" onclick="openProject3()">
+                <h4>Technologies:</h4>
+                <p>HTML, CSS</p>
+                <h4>Description:</h4>
+                <p>Responsive web page</p>
+                <h4>Link:</h4>
+                <a href="https://github.com/IrinaRakhimova/IrinaRakhimova.github.io" class="link" target="_blank">GitHub</a>
+            </div>
         </div>
     </section>
 
@@ -114,9 +151,18 @@
     <section id="sertificates">
         <h2 class="heading gap top">MY SERTIFICATES</h2>
         <div class="flexContainer justify  sides bottom">
-            <img src="./Style/HTML sertificate.png" alt="html Codeacademy" class="certificate">
-            <img src="./Style/CSS sertificate.png" alt="css Codeacademy" class="certificate">
-            <img src="./Style/JavaScript sertificate.png" alt="javascript Codeacademy" class="certificate">
+            <div>
+                <img src="./Style/HTML sertificate.png" alt="html Codeacademy" class="certificate" onclick="openHTML()">
+                <p>HTML</p>
+            </div>
+            <div>
+                <img src="./Style/CSS sertificate.png" alt="css Codeacademy" class="certificate" onclick="openCSS()">
+                <p>CSS</p>
+            </div>
+            <div>   
+                <img src="./Style/JavaScript sertificate.png" alt="javascript Codeacademy" class="certificate" onclick="openJS()">
+                <p>JavaScript</p>
+            </div> 
         </div>
     </section> 
 </body>
