@@ -25,3 +25,7 @@ openProject2 = function() {
 openProject3 = function() {
     window.open('https://github.com/IrinaRakhimova/IrinaRakhimova.github.io')
 }
+
+openLinkedin = function() {
+    window.open('https://www.linkedin.com/in/irina-rakhimova-15b083211/')
+}

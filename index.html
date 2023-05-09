@@ -17,6 +17,17 @@
 </head>
 
 <body>
+<!--Navigation-->
+<nav class="flexContainer">
+    <ul class="flexContainer" id="navigation">
+        <li><a href="#mainInfo"> about me</a></li>
+        <li><a href="#skills">my skills</a></li>
+        <li><a href="#education">my education</a></li>
+        <li><a href="#projects">my projects</a></li>
+        <li><a href="#certificates">my certificates</a></li>
+    </ul>
+    <button onclick="openLinkedin()">Contact me</button>
+</nav>    
 
 <!--Main Info-->
     <section class="flexContainer align " id="intro">
@@ -27,7 +38,7 @@
             <h2 id="firstH2">WEB DEVELOPER</h2>
             <h3>SHE/HER</h3>
             <div> 
-            <p id="aboutMe">Hey! I'm a motivated junior front-end developer who is looking for an opportunity to get new experience in IT. </p>
+            <p id="aboutMe">Hey! I'm a motivated junior front-end developer based in <i>Helsinki, Finland</i>. Now I'm looking for an opportunity to get new experience in IT. </p>
             </div>
             <div>
                 <button onclick="openPdf()">Open my CV</button>
@@ -42,7 +53,7 @@
     </section>
 
 <!--Skills-->    
-    <section id="skills" class="spaceAround flexContainer">
+    <section id="skills" class="JustifyCenter flexContainer">
         <section id="itSkills">    
             <h2 class="heading">I KNOW:</h2>
             <div class="flexContainer" id="skillPics">
@@ -68,7 +79,6 @@
         <section id="languages">
             <h2 class="heading">I SPEAK:</h2>
             <ul>
-                <li class="language">Russian (native)</li>
                 <li class="language">English (C1)</li>
                 <li class="language">Finnish (A2)</li>
             </ul>
@@ -78,37 +88,39 @@
 <!--Education-->
     <section id="education">
         <h2 class="heading">EDUCATION</h2>
-        <div class="center">
-            <div class="flexContainer">   
-                <div>
-                    <p class="bold">2022- </p>
-                    <p class="bold">2023</p>
+        <div  class="flexContainer" id="educationContent">
+            <div id="educationWidth">
+                <div class="flexContainer" >   
+                    <div>
+                        <p class="bold">2022- </p>
+                        <p class="bold">2023</p>
+                    </div>
+                    <div>
+                        <p class="bold margin">Front-end engeneer path</p>
+                        <p class="italic margin">Codeacademy</p>
+                    </div>
                 </div>
-                <div>
-                    <p class="bold margin">Front-end engeneer path</p>
-                    <p class="italic margin">Codeacademy</p>
-                </div>
-            </div>
 
-            <div class="flexContainer">   
-                <div>
-                    <p class="bold">2019- </p>
-                    <p class="bold">2021</p>
-                </div>
-                <div>
-                    <p class="bold margin">Master's degree, Language Interpretation and Translation</p>
-                    <p class="italic margin">Ural State University</p>
-                </div>
-            </div>  
+                <div class="flexContainer">   
+                    <div>
+                        <p class="bold">2019- </p>
+                        <p class="bold">2021</p>
+                    </div>
+                    <div>
+                        <p class="bold margin">Master's degree, Language Interpretation and Translation</p>
+                        <p class="italic margin">Ural State University</p>
+                    </div>
+                </div>  
 
-            <div class="flexContainer">   
-                <div>
-                    <p class="bold">2015- </p>
-                    <p class="bold">2019</p>
-                </div>
-                <div>
-                    <p class="bold margin">Bachelor's degree, International Relations</p>
-                    <p class="italic margin">Ural State University</p>
+                <div class="flexContainer">   
+                    <div>
+                        <p class="bold">2015- </p>
+                        <p class="bold">2019</p>
+                    </div>
+                    <div>
+                        <p class="bold margin">Bachelor's degree, International Relations</p>
+                        <p class="italic margin">Ural State University</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -119,15 +131,17 @@
         <h2 class="heading">MY PROJECTS</h2>
         <div class="flexContainer justify" id="projectsContainer">
             <div class="projectFull">
+                <h3>MY PORTFOLIO</h3>
                 <img src="./Style/Progect 1.png" alt="project 1: this site" class="project" onclick="openProject1()">
                 <h4>Technologies:</h4>
                 <p>HTML, CSS, JavaScript</p>
                 <h4>Description:</h4>
-                <p>Interactive portfolio page</p>
+                <p>Interactive and responsive portfolio page</p>
                 <h4>Link:</h4>
                 <a href="https://github.com/IrinaRakhimova/Portfolio" class="link" target="_blank">GitHub</a>
             </div>
-            <div class="projectFull">    
+            <div class="projectFull"> 
+                <h3>WEB-PAGE FOR A SPEAKING CLUB</h3>    
                 <img src="./Style/project 2.png" alt="project 2" class="project" onclick="openProject2()">
                 <h4>Technologies:</h4>
                 <p>HTML, CSS</p>
@@ -136,21 +150,22 @@
                 <h4>Link:</h4>
                 <a href="https://github.com/IrinaRakhimova/Finnish_club" class="link" target="_blank">GitHub</a>
             </div>
-            <div class="projectFull">     
-                <img src="./Style/Project 3.png" alt="project 3" class="project" onclick="openProject3()">
+            <div class="projectFull">
+                <h3>TO BE DEVELOPED...</h3>     
+                <img src="./Style/Project 3.jpg" alt="project 3" class="project" onclick="openProject3()">
                 <h4>Technologies:</h4>
-                <p>HTML, CSS</p>
+                <p>Technologies</p>
                 <h4>Description:</h4>
                 <p>Responsive web page</p>
                 <h4>Link:</h4>
-                <a href="https://github.com/IrinaRakhimova/IrinaRakhimova.github.io" class="link" target="_blank">GitHub</a>
+                <a href="" class="link" target="_blank">GitHub</a>
             </div>
         </div>
     </section>
 
 <!--Certificates-->
     <section id="certificates">
-        <h2 class="heading gap top">MY SERTIFICATES</h2>
+        <h2 class="heading gap top">MY CERTIFICATES</h2>
         <div class="flexContainer justify bottom" id="certificatesContainer">
             <div>
                 <img src="./Style/HTML sertificate.png" alt="html Codeacademy" class="certificate" onclick="openHTML()">
@@ -166,5 +181,10 @@
             </div> 
         </div>
     </section> 
+
+<!--Footer-->
+    <footer  class="JustifyCenter flexContainer">
+       <p>Made by Irina Rakhimova, 2023</p> 
+    </footer>    
 </body>
 </html>
